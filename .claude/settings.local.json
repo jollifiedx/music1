@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__fffa6d48-e82e-4d16-9d24-4fb69cd9643e__firecrawl_search",
+      "mcp__fffa6d48-e82e-4d16-9d24-4fb69cd9643e__firecrawl_scrape"
+    ]
+  }
+}
