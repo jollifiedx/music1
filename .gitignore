@@ -1,31 +1,39 @@
-# dependencies
+# ---- dependencies ----
 /node_modules
 /.pnp
 .pnp.js
+.yarn/*
 
-# next.js
+# ---- next.js / build output ----
 /.next/
 /out/
-
-# production
 /build
+/dist
+*.tsbuildinfo
+next-env.d.ts.timestamp
 
-# misc
-.DS_Store
-*.pem
+# ---- environment & secrets (NEVER commit) ----
+# Ignore every .env variant (these can hold API keys / tokens)…
+.env
+.env.*
+# …but keep the safe, secret-free template tracked.
+!.env.example
 
-# debug
+# ---- logs ----
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# local env files — NEVER commit real keys
-.env
-.env*.local
-
-# vercel / netlify
+# ---- hosting / deploy ----
 .vercel
 .netlify
 
-# typescript
-*.tsbuildinfo
+# ---- editor / OS cruft ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.pem
